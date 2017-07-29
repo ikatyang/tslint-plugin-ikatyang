@@ -23,7 +23,7 @@ interface Options {
   allowPatterns: string[];
 }
 
-const extnames = ['.ts', '.d.ts', '.tsx', '.js', '.jsx'];
+const extnames = ['.d.ts', '.ts', '.tsx', '.js', '.jsx'];
 
 export class Rule extends tslint.Rules.AbstractRule {
   public static get_failure_message(naming_style: NamingStyle) {
