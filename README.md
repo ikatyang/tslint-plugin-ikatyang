@@ -46,7 +46,40 @@ for `tslint@5.2.0+`
 
 ## Rules
 
-// TODO: custom rules
+### `no-mixed-parameter-properties`
+
+Disallow mixed parameter properties
+
+- pass
+
+  ```ts
+  class MyClass {
+    public prop;
+    constructor(arg1, arg2) {}
+  }
+  ```
+
+- fail
+
+  ```ts
+  class MyClass {
+    public prop;
+    constructor(public propArg, arg) {}
+    //          ~~~~~~~~~~~~~~ [fail]
+  }
+  ```
+
+- fixed
+
+  ```ts
+  class MyClass {
+    public prop;
+    public propArg;
+    constructor(propArg, arg) {
+      this.propArg = propArg;
+    }
+  }
+  ```
 
 ## Development
 

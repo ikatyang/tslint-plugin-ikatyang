@@ -1,0 +1,76 @@
+class Valid1 {
+  public prop;
+  constructor(arg1, arg2) {}
+}
+
+class Valid2 {
+  public get getter() {}
+  constructor(public propArg1, public propArg2) {}
+}
+
+class Invalid1 {
+  public prop;
+  public propArg;
+  constructor(propArg, arg) {
+    this.propArg = propArg;
+  }
+}
+
+class Invalid2 {
+  public propArg;
+  constructor(propArg, arg) {
+    this.propArg = propArg;
+  }
+  public prop;
+}
+
+class Invalid3 {
+  public prop;
+  public propArg;
+  constructor(propArg = 'something', arg) {
+    this.propArg = propArg;
+  }
+}
+
+class Invalid4 {
+  public prop;
+  public propArg;
+  constructor(propArg = 'something', arg) {
+    this.propArg = propArg;
+    console.log(123);
+  }
+}
+
+class Invalid5 {
+  public prop;
+  public propArg1;
+  public propArg2;
+  constructor(propArg1, propArg2) {
+    this.propArg1 = propArg1;
+    this.propArg2 = propArg2;
+  }
+}
+
+class Invalid6 {
+  public prop;
+  public propArg1;
+  public propArg2;
+  constructor(propArg1, propArg2) {
+    this.propArg1 = propArg1;
+    this.propArg2 = propArg2;
+    console.log(123);
+  }
+}
+
+const valid = class {
+  public prop;
+  constructor(arg1, arg2) {}
+}
+
+const invalid = class {
+  public prop;
+  public propArg;
+  constructor(propArg, arg) {
+    this.propArg = propArg;
+  }
+}

@@ -1,0 +1,63 @@
+class Valid1 {
+  public prop;
+  constructor(arg1, arg2) {}
+}
+
+class Valid2 {
+  public get getter() {}
+  constructor(public propArg1, public propArg2) {}
+}
+
+class Invalid1 {
+  public prop;
+  constructor(public propArg, arg) {}
+              ~~~~~~~~~~~~~~ [fail]
+}
+
+class Invalid2 {
+  constructor(public propArg, arg) {}
+              ~~~~~~~~~~~~~~ [fail]
+  public prop;
+}
+
+class Invalid3 {
+  public prop;
+  constructor(public propArg = 'something', arg) {}
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [fail]
+}
+
+class Invalid4 {
+  public prop;
+  constructor(public propArg = 'something', arg) {
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [fail]
+    console.log(123);
+  }
+}
+
+class Invalid5 {
+  public prop;
+  constructor(public propArg1, public propArg2) {}
+              ~~~~~~~~~~~~~~~ [fail]
+                               ~~~~~~~~~~~~~~~ [fail]
+}
+
+class Invalid6 {
+  public prop;
+  constructor(public propArg1, public propArg2) {
+              ~~~~~~~~~~~~~~~ [fail]
+                               ~~~~~~~~~~~~~~~ [fail]
+    console.log(123);
+  }
+}
+
+const valid = class {
+  public prop;
+  constructor(arg1, arg2) {}
+}
+
+const invalid = class {
+  public prop;
+  constructor(public propArg, arg) {}
+              ~~~~~~~~~~~~~~ [fail]
+}
+[fail]: mixed parameter properties are not allowed
