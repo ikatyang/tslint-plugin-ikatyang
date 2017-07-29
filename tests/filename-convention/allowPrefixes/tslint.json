@@ -1,0 +1,6 @@
+{
+  "rulesDirectory": ["../../../rules"],
+  "rules": {
+    "filename-convention": [true, { "allowPrefixes": ["PREFIX."] }]
+  }
+}

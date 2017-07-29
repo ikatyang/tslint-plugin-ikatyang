@@ -1,0 +1,9 @@
+{
+  "rulesDirectory": ["../../../rules"],
+  "rules": {
+    "filename-convention": [
+      true,
+      { "namingStyle": "none", "allowPatterns": ["^test$"] }
+    ]
+  }
+}

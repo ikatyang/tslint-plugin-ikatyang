@@ -46,6 +46,29 @@ for `tslint@5.2.0+`
 
 ## Rules
 
+### `filename-convention`
+
+Enforces all linted files to have their names in a certain case style
+
+Options:
+
+- namingStyle
+  - default: `'kebab-case'`
+  - type: `'camelCase' | 'kebab-case' | 'PascalCase' | 'snake_case' | 'none'`
+  - `'none'` means only accept `allowPatterns`
+- allowPrefixes
+  - default: `[]`
+  - type: `string[]`
+  - e.g. `['.']` (dotfile)
+- allowSuffixes
+  - default: `[]`
+  - type: `string[]`
+  - e.g. `['.test', '.spec']` (test files)
+- allowPatterns
+  - default: `[]`
+  - type: `string[]`
+  - regex patterns, extname excluded
+
 ### `no-mixed-parameter-properties`
 
 Disallow mixed parameter properties
