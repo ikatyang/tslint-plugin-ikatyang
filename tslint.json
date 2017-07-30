@@ -3,6 +3,7 @@
   "rules": {
     "max-classes-per-file": [false],
     "no-use-before-declare": false,
-    "no-unnecessary-type-assertion": false
+    "no-unnecessary-type-assertion": false,
+    "filename-convention": [true, { "allowPatterns": ["Rule$"] }]
   }
 }
