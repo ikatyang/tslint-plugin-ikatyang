@@ -1,11 +1,11 @@
+import camel_case = require('lodash.camelcase');
+import kebab_case = require('lodash.kebabcase');
+import snake_case = require('lodash.snakecase');
+import upper_first = require('lodash.upperfirst');
 import * as path from 'path';
 import * as tslint from 'tslint';
 import * as ts from 'typescript';
 
-import upper_first = require('lodash.upperfirst');
-import kebab_case = require('lodash.kebabcase');
-import camel_case = require('lodash.camelcase');
-import snake_case = require('lodash.snakecase');
 const pascal_case = (str: string) => upper_first(camel_case(str));
 
 export const enum NamingStyle {
