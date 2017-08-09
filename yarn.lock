@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@types/lodash.camelcase@4.3.2":
-  version "4.3.2"
-  resolved "https://registry.yarnpkg.com/@types/lodash.camelcase/-/lodash.camelcase-4.3.2.tgz#fd195ae81b02c6d50f82f25e0d238ee8a76eb006"
+"@types/lodash.camelcase@4.3.3":
+  version "4.3.3"
+  resolved "https://registry.yarnpkg.com/@types/lodash.camelcase/-/lodash.camelcase-4.3.3.tgz#ea5fcc4badea2259008df74425cf80d4536385fc"
   dependencies:
     "@types/lodash" "*"
 
@@ -27,8 +27,8 @@
     "@types/lodash" "*"
 
 "@types/lodash@*":
-  version "4.14.71"
-  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.71.tgz#0dc383f78981216ac76e2f2c3afd998e0450e4c1"
+  version "4.14.72"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.72.tgz#f090cf6eb1fee1647a0efa1ebe18b0b78ed551c6"
 
 "@types/node@8.0.19":
   version "8.0.19"
