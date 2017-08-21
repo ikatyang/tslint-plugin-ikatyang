@@ -27,8 +27,8 @@
     "@types/lodash" "*"
 
 "@types/lodash@*":
-  version "4.14.73"
-  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.73.tgz#9837e47db8643ba5bcef2c7921f37d90f9c24213"
+  version "4.14.74"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.74.tgz#ac3bd8db988e7f7038e5d22bd76a7ba13f876168"
 
 "@types/node@8.0.24":
   version "8.0.24"
