@@ -1,0 +1,8 @@
+import func = require('./export-function');
+import number = require('./export-number');
+import object = require('./export-object');
+import mixin = require('./export-mixin')
+import _class = require('./export-class')
+import * as individual from './export-individual';
+import * as namespace from './export-namespace';
+

@@ -1,0 +1,14 @@
+import * as func from './export-function';
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [error]
+import * as number from './export-number';
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [error]
+import * as object from './export-object';
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [error]
+import * as mixin from './export-mixin'
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [error]
+import * as _class from './export-class'
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [error]
+import * as individual from './export-individual';
+import * as namespace from './export-namespace';
+
+[error]: bad namespace import is not allowed

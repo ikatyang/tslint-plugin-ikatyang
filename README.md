@@ -69,6 +69,31 @@ Options:
   - type: `string[]`
   - regex patterns, extname excluded
 
+### `no-bad-namespace-import`
+
+Disallow bad namespace import
+
+- pass
+
+  ```ts
+  import * as ns1 from './namespace'; // export = namespace { ... }
+  import * as ns2 from './individual'; // export const x = 1; export const y = 2; ...
+  ```
+
+- fail
+
+  ```ts
+  import * as func from './function'; // export = function () { ... }
+  import * as mixin from './mixin'; // function a () {}; namespace a { ... }; export = a;
+  ```
+
+- fixed
+
+  ```ts
+  import func = require('./function');
+  import mixin = require('./mixin');
+  ```
+
 ### `no-mixed-parameter-properties`
 
 Disallow mixed parameter properties
