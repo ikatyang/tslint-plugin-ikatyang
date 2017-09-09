@@ -39,7 +39,8 @@ function walk(context: tslint.WalkContext<void>, type_checker: ts.TypeChecker) {
       const module_specifier = node.moduleSpecifier.getText();
 
       if (
-        namespace_import_type.flags !== ts.TypeFlags.Object ||
+        (namespace_import_type.flags !== ts.TypeFlags.Any &&
+          namespace_import_type.flags !== ts.TypeFlags.Object) ||
         has_signature(namespace_import_type, type_checker)
       ) {
         context.addFailureAtNode(

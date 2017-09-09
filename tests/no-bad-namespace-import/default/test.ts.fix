@@ -5,4 +5,5 @@ import mixin = require('./export-mixin')
 import _class = require('./export-class')
 import * as individual from './export-individual';
 import * as namespace from './export-namespace';
+import * as tslint from 'tslint';
 

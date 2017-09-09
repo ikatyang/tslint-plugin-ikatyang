@@ -10,5 +10,6 @@ import * as _class from './export-class'
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [error]
 import * as individual from './export-individual';
 import * as namespace from './export-namespace';
+import * as tslint from 'tslint';
 
 [error]: bad namespace import is not allowed
