@@ -38,7 +38,7 @@ export class Rule extends tslint.Rules.AbstractRule {
       allowPrefixes: [],
       allowSuffixes: [],
       allowPatterns: [],
-      ...raw_options as Partial<Options>,
+      ...(raw_options as Partial<Options>),
     };
     return this.applyWithWalker(
       new Walker(source_file, this.ruleName, options),
