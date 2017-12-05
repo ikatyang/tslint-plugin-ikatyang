@@ -31,8 +31,8 @@
     "@types/lodash" "*"
 
 "@types/lodash@*":
-  version "4.14.86"
-  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.86.tgz#6788d3d75032c46322ff1c144c948cf8117c405b"
+  version "4.14.87"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.87.tgz#55f92183b048c2c64402afe472f8333f4e319a6b"
 
 "@types/node@8.0.54":
   version "8.0.54"
