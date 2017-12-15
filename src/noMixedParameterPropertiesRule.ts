@@ -59,10 +59,9 @@ class Walker extends tslint.AbstractWalker<void> {
               // add 'this.x = x'
               tslint.Replacement.appendText(
                 constructor_declaration.body!.getStart() + 1, // tslint:disable-line:restrict-plus-operands
-                `\n${leading_spaces}  this.${parameter_name} = ${parameter_name};${!has_content &&
-                is_last_parameter
-                  ? `\n${leading_spaces}`
-                  : ''}`,
+                `\n${leading_spaces}  this.${parameter_name} = ${parameter_name};${
+                  !has_content && is_last_parameter ? `\n${leading_spaces}` : ''
+                }`,
               ),
             ]);
           });
