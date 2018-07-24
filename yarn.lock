@@ -20,9 +20,9 @@
   dependencies:
     "@types/lodash" "*"
 
-"@types/lodash.upperfirst@4.3.3":
-  version "4.3.3"
-  resolved "https://registry.yarnpkg.com/@types/lodash.upperfirst/-/lodash.upperfirst-4.3.3.tgz#e0abf5c12ed314707806af251790f83030080f82"
+"@types/lodash.upperfirst@4.3.4":
+  version "4.3.4"
+  resolved "https://registry.yarnpkg.com/@types/lodash.upperfirst/-/lodash.upperfirst-4.3.4.tgz#258f0c84192aee09dee8fe7de0c7ce2df8be9216"
   dependencies:
     "@types/lodash" "*"
 
