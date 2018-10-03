@@ -38,7 +38,7 @@
     "@types/lodash.kebabcase": "4.1.4",
     "@types/lodash.snakecase": "4.1.4",
     "@types/lodash.upperfirst": "4.3.4",
-    "@types/node": "8.10.32",
+    "@types/node": "8.10.34",
     "nyc": "11.9.0",
     "prettier": "1.12.1",
     "prettier-config-ikatyang": "1.1.1",
